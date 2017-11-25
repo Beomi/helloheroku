@@ -26,6 +26,9 @@ SECRET_KEY = "zz-0^fweeufm+@d-e6#7c8ruf_xmpbqgy8a*^fco=s*p=%)*j#"
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
+if os.environ.get('DEBUG') == 'FALSE':
+    DEBUG = False
+
 # Application definition
 
 INSTALLED_APPS = [
